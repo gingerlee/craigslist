@@ -1,3 +1,8 @@
-<p>
-  cars-trucks works!
-</p>
+<a routerLink=""><button class="btn btn-info">Directory</button></a>
+
+<h3>Cars Listings</h3>
+<div *ngFor="let car of cars" class="card">
+  <div class="card-body">
+    <h3><em>{{car.title}}</em> {{car.price}} {{car.city}}</h3>
+  </div>
+</div>
